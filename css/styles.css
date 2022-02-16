@@ -23,12 +23,12 @@ main {
 .heading {
   display: flex;
   justify-content: space-between;
-  width:90%;
+  width:80%;
   max-width:1200px;
 }
 
 .heading-text {
-  width:40%;
+  width:38%;
 }
 
 h1 {
@@ -87,7 +87,7 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
-  width:90%;
+  width:80%;
   max-width:1200px;
 }
 
