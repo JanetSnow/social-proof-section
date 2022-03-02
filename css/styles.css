@@ -1,5 +1,5 @@
 :root {
-  --px: 20px;
+  --mx: 30px;
 }
 
 body {
@@ -17,10 +17,10 @@ body {
 main {
   height: 100vh;
   width:100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(autofill, minmax(500, 1fr));
+  place-content: center;
+  grid-gap: 30px;
 }
 
 /* intro */
@@ -29,18 +29,18 @@ main {
   justify-content: space-between;
   align-items: center;
   max-width:1200px;
-  padding: var(--px);
+  margin: 0 var(--mx);
 }
 
 .heading-text {
-  width:35%;
+  width:40%;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 50px;
   color: hsl(300, 43%, 22%);
-  line-height: 40px;
+  line-height: 50px;
   margin-bottom: 10px;
 
 }
@@ -53,10 +53,6 @@ h1 {
 
 /* stars related */
 
-.heading-stars {
-  /* width:40%; */
-  margin-top: 30px;
-}
 .stars-wrapper {
   display: flex;
   position: relative;
@@ -92,9 +88,8 @@ img {
 .reviews {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
   max-width:1200px;
-  padding: var(--px);
+  margin: var(--mx);
 }
 
 .review {
@@ -154,7 +149,7 @@ h2 {
 }
 
 /* mobile */
-@media (max-width:1100px) {
+@media (max-width:1050px) {
   body {
   background-image: url("../images/bg-pattern-top-mobile.svg"),
     url("../images/bg-pattern-bottom-mobile.svg");
